@@ -486,6 +486,28 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
+st.markdown("""
+    <style>
+
+    [data-testid="stHeader"] {
+        display: none;
+    }
+
+    [data-testid="stToolbar"] {
+        display: none;
+    }
+
+    [data-testid="stDecoration"] {
+        display: none;
+    }
+
+    .block-container {
+        padding-top: 2rem;
+    }
+
+    </style>
+    """, unsafe_allow_html=True)
+
 
 # ============================================================
 # CUSTOM CSS
